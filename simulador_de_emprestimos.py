@@ -1,5 +1,6 @@
 parcelas = float
 valor_parcelas = float
+score = 0
 
 def mensagem_de_entrada():
 
@@ -34,7 +35,7 @@ def inicio_do_programa():
             print("--------------------------------------------------")
             
 
-    score = 0
+   
     
     if cadastro in {"N", "n"}:
         score = float(input("Você não possui cadastro!\nDigite seu Serasa Score de 0 - 1000:  "))
@@ -63,7 +64,6 @@ def inicio_do_programa():
             print("Parcelas: {}\nValor das parcelas: {}\nTaxa de juros: 20% \nCusto Efetivo Total: {}" .format
             (parcelas, valor_parcelas, valor_emprestimo ))
             print("--------------------------------------------------")
-
 
 
     elif (score >= 300) or (score <= 499): 
